@@ -17,18 +17,21 @@ p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 1rem;
+    color: #4e4747;
 }
 
 h2 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 2rem;
+    color: #4e4747;
 }
 
 h3 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    color: #4e4747;
 }
 
 a {
@@ -53,6 +56,23 @@ a {
 }
 
 
+/*NAV*/
+nav a {
+    font-size: 1.2rem;
+}
+
+nav img {
+    width: 80%;
+}
+
+#menu a {
+    color: #4e4747
+}
+
+#menu a:hover {
+    color: #D0D7CA;
+}
+
 
 /*Forside*/
 
@@ -73,6 +93,7 @@ a {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 8vw;
+    color: #4e4747;
 }
 
 .workshop_img {
