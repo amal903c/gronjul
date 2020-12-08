@@ -34,9 +34,15 @@ h3 {
 a {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
-    font-size: 1.8rem;
+
     text-decoration: none;
     color: #263F0B;
+}
+
+@media only screen and (min-width: 768px) {
+        {
+        font-size: 1.4rem;
+    }
 }
 
 
@@ -115,6 +121,6 @@ a {
 .tre-billeder {
     object-fit: cover;
     object-position: center;
-    height: 35vh;
+    height: 30vh;
 
 }
