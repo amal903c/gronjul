@@ -67,6 +67,22 @@ nav img {
     color: #D0D7CA;
 }
 
+.hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 100px) {
+    #menu_logo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #menu_logo {
+        display: block;
+    }
+}
+
 
 /*Forside*/
 
