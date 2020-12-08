@@ -13,6 +13,25 @@ img {
     width: 100%;
 }
 
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #margin_box {
+        margin: 0 27vw;
+    }
+}
+
 
 
 /*Forside*/
@@ -23,4 +42,27 @@ img {
 
 .streg {
     position: absolute;
+    width: 100vw;
+}
+
+.omkring video {
+    z-index: 1000;
+}
+
+.splash_overskrift {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 8vw;
+}
+
+@media only screen and (min-width: 768px) {
+    .splash_overskrift {
+        transform: rotate(90deg);
+        flex-direction: row-reverse;
+        font-size: 4.5vw;
+    }
+
+    .column_p {
+        column-count: 2;
+    }
 }
