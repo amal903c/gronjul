@@ -25,6 +25,12 @@ h2 {
     font-size: 2rem;
 }
 
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 
 @media only screen and (min-width: 768px) {
     #margin_box {
@@ -55,6 +61,18 @@ h2 {
     font-size: 8vw;
 }
 
+.workshop_img {
+    z-index: 1000;
+}
+
+.f_kasse {
+    width: 50%;
+}
+
+.h2_mødre {
+    text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
     .splash_overskrift {
         transform: rotate(90deg);
@@ -64,6 +82,10 @@ h2 {
 
     .column_p {
         column-count: 2;
+    }
+
+    .f_kasse {
+        width: 20%;
     }
 }
 
