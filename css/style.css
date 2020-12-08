@@ -56,10 +56,13 @@ a {
 }
 
 
+
+
+
+
+
 /*NAV*/
-nav a {
-    font-size: 1.2rem;
-}
+
 
 nav img {
     width: 80%;
@@ -77,17 +80,46 @@ nav img {
     display: none;
 }
 
+#burger {
+    border: none;
+}
+
 @media only screen and (min-width: 100px) {
     #menu_logo {
         display: none;
     }
+
+    nav a {
+        font-size: 1.8rem;
+    }
+
+    #menu ul {
+        height: 100vh;
+    }
+
+
 }
 
 @media only screen and (min-width: 992px) {
     #menu_logo {
         display: block;
     }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    #menu ul {
+        height: 100%;
+    }
 }
+
+
+
+
+
+
+
 
 
 /*Forside*/
