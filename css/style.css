@@ -31,6 +31,14 @@ h3 {
     font-size: 1rem;
 }
 
+a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #263F0B;
+}
+
 
 @media only screen and (min-width: 768px) {
     #margin_box {
@@ -104,4 +112,9 @@ h3 {
 
 
 /* inspiration */
-.tre-billeder
+.tre-billeder {
+    object-fit: cover;
+    object-position: center;
+    height: 35vh;
+
+}
