@@ -20,6 +20,12 @@ p {
     color: #4e4747;
 }
 
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    color: #4e4747;
+}
+
 h2 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
@@ -56,10 +62,13 @@ a {
 }
 
 
+
+
+
+
+
 /*NAV*/
-nav a {
-    font-size: 1.2rem;
-}
+
 
 nav img {
     width: 80%;
@@ -72,6 +81,51 @@ nav img {
 #menu a:hover {
     color: #D0D7CA;
 }
+
+.hidden {
+    display: none;
+}
+
+#burger {
+    border: none;
+}
+
+@media only screen and (min-width: 100px) {
+    #menu_logo {
+        display: none;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+    }
+
+    #menu ul {
+        height: 100vh;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+    #menu_logo {
+        display: block;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    #menu ul {
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
 
 
 /*Forside*/
