@@ -199,3 +199,43 @@ nav img {
     height: 30vh;
 
 }
+
+.billede_link_guide {
+    background-image: url(img/boeredygtigegaver-2.png);
+    opacity: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.myDiv {
+    position: relative;
+    z-index: 1;
+}
+
+.myDiv .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(img/boeredygtigegaver-2.png) center center;
+    background-size: cover;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+}
+
+.guide-link:hover {
+    background-color: #263F0B;
+    transition: 0.2s;
+}
+
+.guide-link:hover a {
+    color: white;
+}
+
+.myDiv:hover .bg {
+    opacity: 100;
+    transition: 0.2s;
+}
