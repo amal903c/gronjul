@@ -154,7 +154,7 @@ nav img {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 8vw;
-    color: #4e4747;
+    color: #C3ABA9;
 }
 
 .workshop_img {
@@ -173,7 +173,7 @@ nav img {
     .splash_overskrift {
         transform: rotate(90deg);
         flex-direction: row-reverse;
-        font-size: 4.5vw;
+        font-size: 3.5vw;
     }
 
     .column_p {
