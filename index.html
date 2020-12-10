@@ -17,6 +17,42 @@
 
     <title>Grøn Jul</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .myDiv {
+            position: relative;
+            z-index: 1;
+        }
+
+        .myDiv .bg {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(img/bordet.JPG) center center;
+            background-size: cover;
+            opacity: .4;
+            width: 100%;
+            height: 100%;
+        }
+
+        .guide-link:hover {
+            background-color: #263F0B;
+            transition: 0.2s;
+        }
+
+        .guide-link:hover a {
+            color: white;
+        }
+
+        .myDiv:hover .bg {
+            opacity: 100;
+            transition: 0.2s;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -63,7 +99,7 @@
             <video width="45%" autoplay muted loop>
                 <source src="video/splash.mp4" type="video/mp4">
             </video>
-            <img class="streg" src="svg/streg2.png">
+            <img class="streg" src="svg/streg2_pink.png">
         </div>
     </section>
 
@@ -73,16 +109,44 @@
 
 
         <!-- Section forside text start -->
-        <section id="forside_txt1" class="p-4 px-md-0 py-md-5">
+        <section id="forside_txt1" class="p-4 px-md-0 py-md-4">
+            <!--
             <div class="d-flex justify-content-center">
-                <h2 class="pb-3 col-md-6">Julepynt der inspirerer, begejstrer og huskes</h2>
+                <h2 class="pb-3 col-md-5">Julepynt der inspirerer, begejstrer og huskes</h2>
             </div>
+-->
             <div class="d-flex justify-content-center">
-                <p class="column_p col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt recusandae sunt, consectetur voluptatibus itaque iusto repudiandae autem ex magnam corrupti praesentium id eius odio aliquam quis officiis? Blanditiis cupiditate, et.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nesciunt, pariatur alias natus, hic iure voluptate et libero necessitatibus velit enim sapiente ipsum quis repellendus quaerat, maiores corrupti! Molestias, distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptas cum placeat vel, ad autem distinctio at sint eos enim. Ratione, voluptates! Accusamus, molestiae, libero. Dolor fugit distinctio quaerat fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi assumenda culpa blanditiis rerum ab ipsum voluptas veritatis maiores, deserunt rem maxime? Delectus voluptas sapiente, sed similique expedita dicta facere. Rem.</p>
+                <p class="col-md-5">Julen er en ganske særlig tid for os. Hjemmet skal pyntes, lys skal tændes og der skal julehgges med dem vi holder af. Vi værdsætter en kreativ og hyggelig atmosfære, hvor vi kan sætte fantasien løs.
+                    <br>
+                    <br>
+                    Vi ønsker at bringe den smukke natur ind i hjemmet og skabe en grønnere jul. Vi finder stor glæde ved brugen af bæredygtige og genanvendlige materialer, og ønsker at dele vores tips og tricks med jer.
+                    <br>
+                    <br>
+                    Glæden ved julen er at være sammen med dem du holder af. Med vores workshops eller julekasser kan du julehygge med dine nærmeste, mens i sammen skaber og laver fint julepynt, der kan sprede juleglæde i dit hjem.
+                    <br>
+                    <br>
+                    Ønsker du inspiration til hjemmelavet julepynt og tips og tricks at gøre din jul mere bæredygtig, hjælper vi dig på vej. Lad os sammen skabe en hyggelig og bedre jul. </p>
             </div>
         </section>
-
         <!-- Section forside text slut-->
+
+
+        <div class="row row-cols-2" style="justify-content: center; height: 45vh;">
+            <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center">
+                    <h2>Deltag i vores jule workshop</h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="text-center">Tag dine nærmeste under armen og kom til julehygge med os. Lav dine</p>
+                </div>
+                <div class="myDiv" style="height: 100%; display: flex; justify-content: center; align-items: center;">
+                    <div class="bg"></div>
+                    <div class="guide-link py-2 px-2" style=" border: 2px solid #263F0B;;">
+                        <a href="">Tilmeld dig her</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -91,7 +155,7 @@
         <section id="forside_workshop">
             <div class="omkring d-flex justify-content-center">
                 <img class="workshop_img w-25" src="img/bordet.JPG" alt="Workshop">
-                <img class="streg" src="svg/streg2.png">
+                <img class="streg" src="svg/streg2_pink.png">
             </div>
 
             <div id="margin_box" class="row p-4">
