@@ -47,6 +47,13 @@ h3 {
     color: #4e4747;
 }
 
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #4e4747;
+}
+
 a {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
@@ -69,9 +76,35 @@ a {
 }
 
 
+
+
+
+
+/*FOOTER*/
+
+
 footer {
     background-color: #EDE3E0;
 }
+
+#copyright {
+    background-color: #C3ABA9;
+    font-size: 0.7rem;
+    color: white;
+}
+
+#tilmeld_knap {
+    background-color: #263F0B;
+}
+
+footer a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #4e4747;
+}
+
+
 
 
 
