@@ -44,6 +44,20 @@
             opacity: 0.5;
         }
 
+        .col {
+            text-align: -webkit-center;
+        }
+
+        @media only screen and (min-width: 576px) {
+            .boksright {
+                float: right;
+            }
+
+            .boksleft {
+                float: left;
+            }
+        }
+
     </style>
     <!--    NYHEDSBREV SLUT TEEEEEEEEEST-->
 </head>
@@ -82,33 +96,36 @@
 
     <!-- Julekasser start -->
 
-    <div class="container_fluid">
+
+    <div class="container_fluid text-center">
+        <h1 class="">Julekasser</h1>
         <div class="row row-cols-1 row-cols-sm-2 d-flex">
+
             <div class="col">
-                <a href="">
-                    <div class="boks " style="float:right;"><img src="img/produktbillede.png">
-                        <h3>Familiekassen</h3>
+                <a href="familiekasse.html">
+                    <div class="boks boksright mt-5"><img src="img/produktbillede.png">
+                        <h3><b>Familiekassen</b><br>kr 200</h3>
                     </div>
                 </a>
             </div>
             <div class="col">
                 <a href="">
-                    <div class="boks" style="float:left;"><img src="img/produktbillede.png">
-                        <h3>Vennekassen</h3>
+                    <div class="boks boksleft mt-5"><img src="img/produktbillede.png">
+                        <h3><b>Vennekassen</b><br>kr 200</h3>
                     </div>
                 </a>
             </div>
             <div class="col">
                 <a href="">
-                    <div class="boks mt-5" style="float:right;"><img src="img/produktbillede.png">
-                        <h3>Parkassen</h3>
+                    <div class="boks boksright mt-5"><img src="img/produktbillede.png">
+                        <h3><b>Parkassen</b><br>kr 150</h3>
                     </div>
                 </a>
             </div>
             <div class="col">
                 <a href="">
-                    <div class="boks mt-5" style="float:left;"><img src="img/produktbillede.png">
-                        <h3>Selvstændig kasse</h3>
+                    <div class="boks boksleft mt-5"><img src="img/produktbillede.png">
+                        <h3><b>Selvstændig kasse</b><br>kr 100</h3>
                     </div>
                 </a>
             </div>
@@ -116,7 +133,61 @@
     </div>
 
     <!-- Julekasser slut -->
+    <!-- Footer -->
+    <footer class="page-footer font-small mt-5 pt-4 pt-md-5 pb-3 pb-md-4 px-4 px-md-5">
+        <div class="row">
+            <div class="col-md-4 mt-md-0 mt-3">
+                <h4>Kontakt os</h4>
+                <ul class="list-unstyled">
+                    <li class="pt-2">
+                        <a href="tel:99999999">Telefon: +45 99999999</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="mailto:groen@jul.dk">Mail: groen@jul.dk</a>
 
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+
+                <h4>Følg os</h4>
+
+
+                <ul class="list-unstyled">
+                    <li class="pt-2">
+                        <a href="https://www.facebook.com/Gr%C3%B8n-Jul-105777344730157">Facebook</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="https://www.instagram.com/groenjul_kea/?hl=da">Instagram</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="https://www.youtube.com/channel/UC9mBqo0QVVeLNVzBK4lIGbA/videos">Youtube</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <h4>Information</h4>
+                <ul class="list-unstyled">
+                    <li class="pt-2">
+                        <a href="handel.html">Handelsbetingelser</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="persondata.html">Persondatapolitik</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="cookie.html">Cookie politik</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Copyright -->
+    <div id="copyright" class="footer-copyright text-center py-2">Dette site er lavet i forbindelse med en caseopgave på kea
+    </div>
+    <!-- Copyright -->
 
 
 
