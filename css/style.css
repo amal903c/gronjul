@@ -224,6 +224,42 @@ nav img {
 }
 
 
+/* NYE FORSIDE */
+@media only screen and (min-width: 100px) {
+
+    .splash_container > div,
+    .splash_container img {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .splash_container > div,
+    .splash_container img {
+        height: 83vh;
+    }
+
+}
+
+.paralax-billede-naturen {
+    background-image: url(../img/skov.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-attachment: fixed;
+
+}
+
+/*
+.splash_container:nth-child(2) {
+    background-image: url(../img/splash_familie.jpg);
+    background-position: left left;
+
+    background-size: cover;
+}*/
+
+
+
 
 
 
