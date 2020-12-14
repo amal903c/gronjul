@@ -36,11 +36,27 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: url(img/boeredygtigegaver-2.png) center center;
+
             background-size: cover;
             opacity: .4;
             width: 100%;
             height: 100%;
+        }
+
+        .myDiv .bg-lys {
+            background: url(img/lysestage.png) center center;
+            background-size: cover;
+        }
+
+        .myDiv .bg-troe {
+            background: url(img/juletr%C3%A6er2.png) center left;
+            background-size: cover;
+        }
+
+        .myDiv .bg-diamant {
+            background: url(img/julediamant.png) center left;
+            background-size: cover;
+
         }
 
         .guide-link:hover {
@@ -51,45 +67,67 @@
         .guide-link:hover a {
             color: white;
         }
-
-        .myDiv:hover .bg {
-            opacity: 100;
-            transition: 0.2s;
-        }
     </style>
 
     <title>Grønjul.dk</title>
 </head>
 
 <body>
+    <!-- NAV start -->
 
-    <div class="container">
+    <nav id="menu" class="navbar navbar-expand-lg navbar-light">
+        <button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+            <ul class="navbar-nav py-2 justify-content-center">
+                <li class="nav-item px-5 py-3">
+                    <a class="nav-link d-flex justify-content-center" href="workshop.html">Workshop</a>
+                </li>
+                <li class="nav-item px-5 py-3">
+                    <a class="nav-link d-flex justify-content-center" href="julekasser.html">Julekasser</a>
+                </li>
+                <li id="menu_logo" class="nav-item px-4 py-3">
+                    <a class="nav-link d-flex justify-content-center p-0" href="index.html"><img src="svg/logo.svg" alt="Grøn jul logo"></a>
+                </li>
+                <li class="nav-item px-5 py-3">
+                    <a class="nav-link d-flex justify-content-center" href="Inspiration.html">Inspiration</a>
+                </li>
+                <li class="nav-item px-5 py-3">
+                    <a class="nav-link d-flex justify-content-center" href="filosofi.html">Filosofien</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- NAV slut -->
+    <div class="containerh">
 
         <!-- overskrift  -->
         <h1 class="text-center">Videoguides</h1>
         <div style="display: flex; justify-content: center;">
-            <p class="col-md-6 my-5 col-9 ">For os er julepynt en vigtig del af julehyggen, ligesom den er for mange andre. Så derfor har vi sammensat en række guides til bæredygtigt julepynt, der kan laves af naturens ”guld” og genbrugsmaterialer. ” Ønsker du inspiration til hjemmelavet julepynt og vidunderlige juledekorationer? Vi har samlet flere yndige idéer til dig, så du kan sprede en glædelig julestemning i dit hjem.</p>
+            <p class="col-md-5 my-5 col-9 ">For os er julepynt en vigtig del af julehyggen, ligesom den er for mange andre. Så derfor har vi sammensat en række guides til bæredygtigt julepynt, der kan laves af naturens ”guld” og genbrugsmaterialer. ” Ønsker du inspiration til hjemmelavet julepynt og vidunderlige juledekorationer? Vi har samlet flere yndige idéer til dig, så du kan sprede en glædelig julestemning i dit hjem.</p>
         </div>
         <!-- julelys  -->
         <h2 class="text-center">Julelys</h2>
         <div style="display: flex; justify-content: center;">
-            <p class="col-md-6 my-5 col-9 ">Det er især lys som spreder varme og kærlighed i rummet. Krerre smukke naturlige julelys, og lad julestemingen sprede sig i dit hjem. “Sæt lyset i vindueskammen, ved din yndlingsnisse eller julebordet” foreslå Grønjul</p>
+            <p class="col-md-5 my-5 col-9 ">Det er især lys som spreder varme og kærlighed i rummet. Krerre smukke naturlige julelys, og lad julestemingen sprede sig i dit hjem. “Sæt lyset i vindueskammen, ved din yndlingsnisse eller julebordet” foreslå Grønjul</p>
         </div>
 
         <!-- billeder smalt plus bred  -->
         <div class="omkring d-flex" style="justify-content: center; display: flex;">
-            <img style="height: 50vh; z-index: 1;" class="tre-billeder col-9 col-md-6 p-2" src="img/boeredygtigegaver-2.png" alt="">
+            <img style="height: 50vh; z-index: 1;" class="tre-billeder col-9 col-md-5 p-2" src="img/lysetager2.png" alt="">
             <img style="top: 75px;" class="streg" src="svg/streg2.png" alt="">
         </div>
         <!-- BILLEDE OG LINK -->
         <div class="row row-cols-2 mt-4" style="justify-content: center; height: 45vh;">
-            <div class="col-md-4">
-                <img style="object-fit: cover; object-position: center; height: 45vh;" src="img/boeredygtigegaver-2.png" alt="">
+            <div class="col-md-3">
+                <img style="object-fit: cover; object-position: center; height: 45vh;" src="img/kortelys.png" alt="">
             </div>
             <div class="col-3 col-md-2">
 
                 <div class="myDiv" style="height: 100%; display: flex; justify-content: center; align-items: center;">
-                    <div class="bg"></div>
+                    <div class="bg bg-lys"></div>
                     <div class="guide-link py-2 px-2" style=" border: 2px solid #263F0B; transform: rotate(-90deg);">
                         <a href="">Se guides</a>
                     </div>
@@ -101,44 +139,7 @@
 
         <!-- video  -->
         <div class="d-flex my-5" style="justify-content: center">
-            <iframe class="col-9" width="420" height="315" src="https://www.youtube.com/embed/_4M2cOesZkU">
-            </iframe>
-        </div>
-
-        <!-- overskrift  -->
-
-        <!-- papirjuletræ  -->
-        <h2 class="text-center">Papirjuletræ</h2>
-        <div style="display: flex; justify-content: center;">
-            <p class="col-md-6 my-5 col-9 ">Det er især lys som spreder varme og kærlighed i rummet. Krerre smukke naturlige julelys, og lad julestemingen sprede sig i dit hjem. “Sæt lyset i vindueskammen, ved din yndlingsnisse eller julebordet” foreslå Grønjul</p>
-        </div>
-
-        <!-- billeder smalt plus bred  -->
-
-        <!-- BILLEDE OG LINK -->
-        <div class="row row-cols-2 mb-4" style="justify-content: center; height: 45vh;">
-            <div class="col-md-4">
-                <img style="object-fit: cover; object-position: center; height: 45vh;" src="img/boeredygtigegaver-2.png" alt="">
-            </div>
-            <div class="col-3 col-md-2">
-
-                <div class="myDiv" style="height: 100%; display: flex; justify-content: center; align-items: center;">
-                    <div class="bg"></div>
-                    <div class="guide-link py-2 px-2" style=" border: 2px solid #263F0B; transform: rotate(-90deg);">
-                        <a href="">Se guides</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="omkring d-flex" style="justify-content: center; display: flex;">
-            <img style="height: 50vh; z-index: 1;" class="tre-billeder col-9 col-md-6 p-2" src="img/boeredygtigegaver-2.png" alt="">
-            <img style="top: 75px;" class="streg" src="svg/streg2.png" alt="">
-        </div>
-
-        <!-- video  -->
-        <div class="d-flex my-5" style="justify-content: center">
-            <iframe class="col-9" width="420" height="315" src="https://www.youtube.com/embed/_4M2cOesZkU">
+            <iframe class="col-7" width="420" height="315" src="https://www.youtube.com/embed/_4M2cOesZkU">
             </iframe>
         </div>
 
@@ -146,7 +147,64 @@
         <!-- liste  -->
         <h3 class="text-center">Du får brug får:</h3>
         <div style="display: flex; justify-content: center;">
-            <ul class="col-md-6 my-5 col-9 ">
+            <ul class="col-md-5 my-5 col-9 ">
+                <li>En gammel flaske</li>
+                <li>Saks</li>
+                <li>Snor</li>
+                <li>Gran</li>
+                <li>Mos</li>
+                <li>Lys</li>
+            </ul>
+        </div>
+
+
+        <!-- overskrift  -->
+        <div class="container_fluid">
+            <div class="omkring d-flex mt-5" style="justify-content: center; display: flex;">
+                <img style="" class="streg_landing" src="svg/streg_hjerte.png" alt="">
+            </div>
+        </div>
+        <!-- papirjuletræ  -->
+        <h2 class="text-center">Papirjuletræ</h2>
+        <div style="display: flex; justify-content: center;">
+            <p class="col-md-5 my-5 col-9 ">Juletræer er altid en klassisker blandt julen og vi elsker disse små yndige juletræer. Find din gamle yndlingsbog frem, og forvandle den om til et moderne og flot juletræ som kan pynte over alt i hjemmet.
+            </p>
+        </div>
+
+        <!-- billeder smalt plus bred  -->
+
+        <!-- BILLEDE OG LINK -->
+        <div class="row row-cols-2 mb-4" style="justify-content: center; height: 45vh;">
+            <div class="col-md-3">
+                <img style="object-fit: cover; object-position: center; height: 45vh;" src="img/juletroeer2.jpg" alt="">
+            </div>
+            <div class="col-3 col-md-2">
+
+                <div class="myDiv" style="height: 100%; display: flex; justify-content: center; align-items: center;">
+                    <div class="bg bg-troe"></div>
+                    <div class="guide-link py-2 px-2" style=" border: 2px solid #263F0B; transform: rotate(-90deg);">
+                        <a href="">Se guides</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="omkring d-flex" style="justify-content: center; display: flex;">
+            <img style="height: 50vh; z-index: 1;" class="tre-billeder col-9 col-md-5 p-2" src="img/juletr%C3%A6er2.png" alt="">
+            <img style="top: 75px;" class="streg" src="svg/streg2.png" alt="">
+        </div>
+
+        <!-- video  -->
+        <div class="d-flex my-5" style="justify-content: center">
+            <iframe class="col-7" width="420" height="315" src="https://www.youtube.com/embed/_JwEKVYvXsE">
+            </iframe>
+        </div>
+
+
+        <!-- liste  -->
+        <h3 class="text-center">Du får brug får:</h3>
+        <div style="display: flex; justify-content: center;">
+            <ul class="col-md-5 my-5 col-9 ">
                 <li>En gammel bog</li>
                 <li>Skaks</li>
                 <li>Ler</li>
@@ -156,10 +214,114 @@
             </ul>
         </div>
 
+        <div class="container_fluid">
+            <div class="omkring d-flex mt-5" style="justify-content: center; display: flex;">
+                <img style="" class="streg_landing" src="svg/streg_juletr%C3%A6.png" alt="">
+            </div>
+        </div>
+
+        <h2 class="text-center">Papirdiamant</h2>
+        <div style="display: flex; justify-content: center;">
+            <p class="col-md-5 my-5 col-9 ">Julehjerte, julestjerner og juletræspynt spreder altid glæde i hjemmet. Vi har designet vores egnen papirdiamant, som kan hænges op over det hele og sprede julehyggen. </p>
+        </div>
+
+        <!-- billeder smalt plus bred  -->
+
+        <!-- BILLEDE OG LINK -->
+        <div class="row row-cols-2 mb-4" style="justify-content: center; height: 45vh;">
+            <div class="col-md-3">
+                <img style="object-fit: cover; object-position: center; height: 45vh;" src="img/julediamant2.png" alt="">
+            </div>
+            <div class="col-3 col-md-2">
+
+                <div class="myDiv" style="height: 100%; display: flex; justify-content: center; align-items: center;">
+                    <div class="bg bg-diamant"></div>
+                    <div class="guide-link py-2 px-2" style=" border: 2px solid #263F0B; transform: rotate(-90deg);">
+                        <a href="">Se guides</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="omkring d-flex" style="justify-content: center; display: flex;">
+            <img style="height: 50vh; z-index: 1;" class="tre-billeder col-9 col-md-5 p-2" src="img/julediamant.png" alt="">
+            <img style="top: 75px;" class="streg" src="svg/streg2.png" alt="">
+        </div>
+
+        <!-- video  -->
+        <div class="d-flex my-5" style="justify-content: center">
+            <iframe class="col-7" width="420" height="315" src="https://www.youtube.com/embed/W0d7e02lJ6A">
+            </iframe>
+        </div>
+
+
+        <!-- liste  -->
+        <h3 class="text-center">Du får brug får:</h3>
+        <div style="display: flex; justify-content: center;">
+            <ul class="col-md-5 my-5 col-9 ">
+                <li>En gammel bog</li>
+                <li>Saks</li>
+                <li>Snor</li>
+                <li>Lim</li>
+            </ul>
+        </div>
 
 
     </div> <!-- CONTAINER SLUT -->
+    <!-- Footer -->
+    <footer class="page-footer font-small mt-5 pt-4 pt-md-5 pb-3 pb-md-4 px-4 px-md-5">
+        <div class="row text-center">
+            <div class="col-md-3 mt-md-0 mt-3">
+                <a href="index.html"><img style="width: 70px;" src="img/FAVICON.png"></a>
+            </div>
+            <div class="col-md-3 mt-md-0 mt-3">
+                <h4>Kontakt os</h4>
+                <ul class="list-unstyled">
+                    <li class="pt-2">
+                        <a href="tel:99999999">Telefon: +45 99999999</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="mailto:groen@jul.dk">Mail: groen@jul.dk</a>
 
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-md-0 mt-3">
+
+                <h4>Følg os</h4>
+
+
+                <ul class="list-unstyled">
+                    <li class="pt-2">
+                        <a href="https://www.facebook.com/Gr%C3%B8n-Jul-105777344730157">Facebook</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="https://www.instagram.com/groenjul_kea/?hl=da">Instagram</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="https://www.youtube.com/channel/UC9mBqo0QVVeLNVzBK4lIGbA/videos">Youtube</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-3 mt-md-0 mt-3">
+                <h4>Information</h4>
+                <ul class="list-unstyled">
+                    <li class="pt-2">
+                        <a href="handel.html">Handelsbetingelser</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="persondata.html">Persondatapolitik</a>
+                    </li>
+                    <li class="pt-2">
+                        <a href="cookie.html">Cookie politik</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
