@@ -2,16 +2,17 @@
 <html lang="da">
 
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
-    <link rel="manifest" href="fav/site.webmanifest">
-    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+     <link rel="manifest" href="fav/site.webmanifest">
+     <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -56,8 +57,12 @@
             padding: 0px 103px 0px 103px;
             color: #DAC6AB;
             border-width: thin;
+        }
 
-
+        button:hover {
+            border-color: white;
+            color: white;
+            background-color: #DAC6AB;
         }
 
         #mce-EMAIL,
@@ -149,14 +154,14 @@
             </div>
 -->
             <div class="omkring d-flex" style="justify-content: center; display: flex;">
-                <img style="height: 50vh; z-index: 1;" class="tre-billeder col-9 col-md-6 p-2" src="img/landingspagebillede.png" alt="">
+                <img style="height: 50vh; z-index: 1;" class="tre-billeder col-9 col-md-6 p-2" src="img/vidonerer.png" alt="">
                 <img style="top: 75px;" class="streg" src="svg/streg2_pink.png" alt="">
             </div>
             <div class="d-flex justify-content-center">
-                <h1 class="col-md-6 my-1 col-9">Giv et barn en uforglemmelig jul<br></h1>
+                <h1 class="col-md-6 my-3 col-9">Giv et barn en uforglemmelig jul</h1>
             </div>
             <div class="d-flex justify-content-center">
-                <p class="col-md-6 my-5 col-9">
+                <p class="col-md-6 my-1 col-9">
                     Julen er en ganske særlig tid. Hjemmet skal pyntes, lys skal tændes og der skal julehygges med dem vi holder af. Men for mange er julen en ganske frygtelig tid.
                     <br><br>
                     Familier i pengenød, kan ikke give deres børn den magiske juletid, som de fortjener. Derfor har vi indgået et arbejde med Mødrehjælpen, hvor hver en doneret krone vil gå ubeskåret til udsatte børnefamilier i Danmark.
@@ -183,20 +188,26 @@
 
     <!-- Julekasser start -->
     <div class="container_fluid">
-        <div class="row row-cols-2" style="justify-content: center; ">
-            <div class="col-3 col-md-2">
+        <section id="forside_txt1" class="p-4 px-md-0 py-md-4">
 
-                <div class="kassebillede" style="height: 100%; display: flex; justify-content: center; align-items: center;">
+            <div class="d-flex justify-content-center">
+                <h1 class="col-md-6 my-1 col-9">Juleworkshop i trygge rammer<br></h1>
+            </div>
+        </section>
+        <div class="row row-cols-2" style="justify-content: center; ">
+
+
+            <div class="col-md-4 ">
+
+                <img style="object-fit: cover; object-position: center; " src="img/produktbillede.png" alt="">
+            </div>
+            <div class="col-3 col-md-2">
+                <div class="kassebillede" style="height: 100%; display: flex; justify-content: center;margin-left: 10px;">
                     <!--                    <div class="bg"></div>-->
                     <p>Vi tilbyder fire kasser, alt efter dit behov, til en perfekt hjemme-workshop. <br><br> Skab julehygge i hjemmet, og hjælp på samme tid et udsat barn med at få en magisk jul.<br> <br><a style="color: #3498174; " href="julekasser.html"><button class="landing_knap">Udforsk vores julekasser</button></a></p>
 
                 </div>
             </div>
-            <div class="col-md-4">
-                <h1>Juleworkshop i trygge rammer</h1>
-                <img style="object-fit: cover; object-position: center; " src="img/produktbillede.png" alt="">
-            </div>
-
         </div>
     </div>
     <!-- Julekasser slut -->
@@ -252,8 +263,11 @@
 
     <!-- Footer -->
     <footer class="page-footer font-small mt-5 pt-4 pt-md-5 pb-3 pb-md-4 px-4 px-md-5">
-        <div class="row">
-            <div class="col-md-4 mt-md-0 mt-3">
+        <div class="row text-center">
+            <div class="col-md-3 mt-md-0 mt-3">
+                <a href="index.html"><img style="width: 70px;" src="img/FAVICON.png"></a>
+            </div>
+            <div class="col-md-3 mt-md-0 mt-3">
                 <h4>Kontakt os</h4>
                 <ul class="list-unstyled">
                     <li class="pt-2">
@@ -265,7 +279,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4 mt-md-0 mt-3">
+            <div class="col-md-3 mt-md-0 mt-3">
 
                 <h4>Følg os</h4>
 
@@ -283,7 +297,7 @@
                 </ul>
 
             </div>
-            <div class="col-md-4 mt-md-0 mt-3">
+            <div class="col-md-3 mt-md-0 mt-3">
                 <h4>Information</h4>
                 <ul class="list-unstyled">
                     <li class="pt-2">
@@ -307,7 +321,6 @@
     <div id="copyright" class="footer-copyright text-center py-2">Dette site er lavet i forbindelse med en caseopgave på kea
     </div>
     <!-- Copyright -->
-
 
 
     <!-- Optional JavaScript; choose one of the two! -->
