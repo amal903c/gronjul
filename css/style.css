@@ -256,6 +256,15 @@ nav img {
     font-size: 1.3rem;
 }
 
+.knap:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 2px #5F525B;
+}
+
+.knap:hover a {
+    color: #5F525B;
+}
+
 /*
 .billede_link_guide {
     background-image: url(img/boeredygtigegaver-2.png);
