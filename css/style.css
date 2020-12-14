@@ -28,8 +28,8 @@ li {
 }
 
 h1 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 3rem;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 2.6rem;
     color: #4e4747;
 }
 
@@ -238,6 +238,7 @@ nav img {
 
 
 /* inspiration */
+
 .tre-billeder {
     object-fit: cover;
     object-position: center;
@@ -245,6 +246,26 @@ nav img {
 
 }
 
+.knap {
+    background-color: #5F525B;
+}
+
+.knap a {
+    color: white;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.knap:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 2px #5F525B;
+}
+
+.knap:hover a {
+    color: #5F525B;
+}
+
+/*
 .billede_link_guide {
     background-image: url(img/boeredygtigegaver-2.png);
     opacity: 50%;
@@ -256,6 +277,7 @@ nav img {
     position: relative;
     z-index: 1;
 }
+
 
 .myDiv .bg {
     position: absolute;
@@ -279,3 +301,4 @@ nav img {
 .guide-link:hover a {
     color: white;
 }
+*/
