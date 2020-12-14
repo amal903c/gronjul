@@ -279,8 +279,3 @@ nav img {
 .guide-link:hover a {
     color: white;
 }
-
-.myDiv:hover .bg {
-    opacity: 100;
-    transition: 0.2s;
-}
