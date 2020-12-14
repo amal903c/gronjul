@@ -29,8 +29,8 @@ function produktInfoSkift() {
 function filtering() {
     console.log("filtering")
 
-//    console.log("filter");
-//    filter = this.dataset.kategori;
+    //    console.log("filter");
+    //    filter = this.dataset.kategori;
 
 
     document.querySelectorAll(".produktbeskrivelse p").forEach(elm => {
@@ -39,31 +39,36 @@ function filtering() {
 
     this.classList.add("valgt_info");
 
-    if (this.dataset.kategori == "beskrivelse"){
+    if (this.dataset.kategori == "beskrivelse") {
         console.log("hej med dig");
 
-    document.querySelector("#beskrivelseInfo").classList.remove("hidden");
-    document.querySelector("#informationInfo").classList.add("hidden");
-    document.querySelector("#leveringsInfo").classList.add("hidden");
+        document.querySelector("#beskrivelseInfo").classList.remove("hidden");
+        document.querySelector("#informationInfo").classList.add("hidden");
+        document.querySelector("#leveringsInfo").classList.add("hidden");
 
 
-    }
-
-    else if (this.dataset.kategori == "information"){
+    } else if (this.dataset.kategori == "information") {
         console.log("hej med dig info");
 
-         document.querySelector("#beskrivelseInfo").classList.add("hidden");
-    document.querySelector("#informationInfo").classList.remove("hidden");
-    document.querySelector("#leveringsInfo").classList.add("hidden");
-    }
-
-    else if (this.dataset.kategori == "levering"){
+        document.querySelector("#beskrivelseInfo").classList.add("hidden");
+        document.querySelector("#informationInfo").classList.remove("hidden");
+        document.querySelector("#leveringsInfo").classList.add("hidden");
+    } else if (this.dataset.kategori == "levering") {
         console.log("hej med dig levering");
 
-    document.querySelector("#beskrivelseInfo").classList.add("hidden");
-    document.querySelector("#informationInfo").classList.add("hidden");
-    document.querySelector("#leveringsInfo").classList.remove("hidden");
+        document.querySelector("#beskrivelseInfo").classList.add("hidden");
+        document.querySelector("#informationInfo").classList.add("hidden");
+        document.querySelector("#leveringsInfo").classList.remove("hidden");
     }
 
 
 }
+
+
+
+
+//forside
+
+var rellax = new Rellax(".rellax", {
+    center: true,
+});
