@@ -10,29 +10,80 @@
     <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbars/">
-    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Grøn Jul</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+
+    <title>Grønjul.dk</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
+        .pris {
+            color: #D1C3C1;
+            font-size: 1.5rem;
+        }
+
+        .theknap {
+            border: 2px solid #263F0B;
+            background-color: white;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            font-size: 1rem;
+            color: #263F0B;
+            padding: 15px 60px;
+            transition: 0.2s;
+        }
+
+        .theknap:hover {
+            background-color: #263F0B;
+            color: white;
+        }
+
+        .valgt_info {
+            border-bottom: 2px solid #263F0B;
+        }
+
+        .knap {
+            background-color: white;
+            border-style: solid;
+            border-color: #DAC6AB;
+            color: #DAC6AB;
+            padding: 7px 25px 7px 25px;
+            font-size: 1.5em;
+        }
+
+        .knap:hover {
+            border-color: white;
+            color: white;
+            background-color: #DAC6AB;
+
+        }
+
+        li,
+        ul {
+            list-style: none;
+        }
 
     </style>
 </head>
 
 <body>
+
 
     <!-- NAV start -->
 
@@ -69,48 +120,35 @@
     <!-- NAV slut -->
 
 
+    <!-- CONTAINER START -->
+    <div class="container_fluid">
 
-
-    <div class="container">
-
-
-        <!-- Section forside text start -->
-        <section id="forside_txt1" class="p-4 px-md-0 py-md-4">
-
-            <div class="d-flex justify-content-center">
-                <h1 class="pb-3 col-md-5">Filosofien bag grøn jul</h1>
+        <div class="row row-cols-md-2">
+            <div class="col  ml-5 mt-5 mb-5">
+                <img src="img/produktbillede.png">
             </div>
 
-            <div class="d-flex justify-content-center pt-1">
-                <p class="col-md-5">Grøn jul er den nye hvide jul. Og en grøn jul er en bæredygtig jul.
 
-                    Vi værdsætter en kreativ og hyggelig atmosfære, hvor man kan sætte fantasien løs. Vi udfordrer klippe-klistre-evnerne og bringer den smukke natur ind i hjemmet med et julet twist.
+            <!-- BILLEDER SLUT -->
+            <div class=" mt-5 mb-5 text-center justify-content-center">
+
+                <ul>
+                    <li>
+                        <h1>Indkøbskurv</h1>
+                    </li>
+                    <li class="pris">Familiekassen</li>
+                    <li class="pris">250kr</li>
+                    <li class="pris" style="cursor: pointer; color: black;">- 1 +
+                    </li>
+                </ul>
+
+                <div class="d-flex mt-5 justify-content-center">
+                    <button class="theknap">Fortsæt til kassen</button>
+                </div>
             </div>
-        </section>
-        <!-- Section forside text slut-->
-        <div class="omkring d-flex pt-1" style="justify-content: center; display: flex;">
-            <img style="height: 45vh; z-index: 1;" class="tre-billeder col-9 col-md-6 p-2" src="img/workshop.png" alt="">
-            <img style="top: 75px;" class="streg" src="svg/streg2_pink.png" alt="">
         </div>
-
-        <section id="forside_txt1" class="p-4 px-md-0 py-md-4">
-            <div class="d-flex justify-content-center pt-1">
-                <p class="col-md-5"><b>Bæredygtigt forbrug og produktionsformer</b><br>
-                    Vi vil reducere vores fodaftryk på naturen ved at genbruge og reducere mængden af affald. Dermed støtter vi <a href="https://www.verdensmaalene.dk/maal/12">FN’s verdensmål 12</a> om at sikre ansvarligt forbrug og produktion.
-                    <br><br>
-                    Vores indpakning er 100% genanvendt pap, og al materialet er valgt med omhu.
-                    <br><br>
-                    <b>Grøn Jul x Mødrehjælpen</b><br>
-                    Vi er gået sammen med Mødrehjælpen for at skabe et fokus på børnefamilier som står i en svær økonomisk situation. En familie kan få 500kr pr. barn, til gaver, godter og alt det der hører med til at skabe en magisk jul.
-                    <br><br>
-                    Derfor går 20% af prisen på vores workshop og produkter direkte, ubeskåret til Mødrehjælpens julehjælp. Fordi i julen værner vi ekstra meget om hinanden.
-            </div>
-        </section>
-
     </div>
-
-
-
+    <!-- CONTAINER SLUT -->
     <!-- Footer -->
     <footer class="page-footer font-small mt-5 pt-4 pt-md-5 pb-3 pb-md-4 px-4 px-md-5">
         <div class="row text-center">
@@ -172,27 +210,24 @@
     </div>
     <!-- Copyright -->
 
-
-
-
-
-
-
-
-
     <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
 
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="gsap.min.js"></script>
-    <script src="ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-    <script scr="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="js/script.js"></script>
 
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
