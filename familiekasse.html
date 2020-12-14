@@ -105,22 +105,29 @@
         .produktbeskrivelse p:hover {
             border-bottom: 2px solid #263F0B;
             transition: 0.2s;
+        }
 
-            .knap {
-                background-color: white;
-                border-style: solid;
-                border-color: #DAC6AB;
-                color: #DAC6AB;
-                padding: 7px 25px 7px 25px;
-                font-size: 1.5em;
-            }
+        .knap {
+            background-color: white;
+            border-style: solid;
+            border-color: #DAC6AB;
+            color: #DAC6AB;
+            padding: 7px 25px 7px 25px;
+            font-size: 1.5em;
+        }
 
-            .knap:hover {
-                border-color: white;
-                color: white;
-                background-color: #DAC6AB;
+        .knap:hover {
+            border-color: white;
+            color: white;
+            background-color: #DAC6AB;
 
-            }
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #C3ABA9;
+        }
+
     </style>
 </head>
 
@@ -203,10 +210,10 @@
                 <p class="pris text-center">250 kr</p>
                 <p class="text-center mt-4">Fragt 29,00 kr</p>
                 <p class="text-center" style="margin-top: -15px;">Lev. 1-3 hverdage</p>
-                <div class="d-flex mx-5 mt-5" style="justify-content: space-around ">
-                    <span>-</span>
+                <div class="d-flex mx-5 mt-5 pl-5 pr-5 mb-2" style="justify-content: space-around ">
+                    <span style="cursor: pointer;">-</span>
                     <span>1</span>
-                    <span>+</span>
+                    <span style="cursor: pointer;">+</span>
                 </div>
 
                 <div class="d-flex mt-4" style="justify-content: center;">
@@ -215,21 +222,50 @@
             </div>
         </div>
 
-        <div class="d-flex mx-5 mt-5 produktbeskrivelse" style="justify-content: space-around;">
-            <p class="valgt_info">Beskrivelse</p>
-            <p>Information</p>
-            <p>Levering</p>
+        <div class="d-flex mt-5" style="justify-content: center; flex-direction: column; align-items: center;">
+            <div class="d-flex mx-5 mt-5 produktbeskrivelse col-md-5" style="justify-content: space-around;">
+                <p class="valgt_info" data-kategori="beskrivelse">Beskrivelse</p>
+                <p data-kategori="information">Information</p>
+                <p data-kategori="levering">Levering</p>
+            </div>
+
+
+
+
+
+            <p id="beskrivelseInfo" class="pr-5 pb-5 pl-5 pt-1 col-md-5">
+                Vores bæredygtige familiekasse er lavet til dig, som gerne vil hygge med familien. Her finder i materialer og guides som er lavet til små og store og dem midt i mellem, så alle kan være med. <br><br>
+
+                Vores kasse måler 30 cm x 50 cm.
+
+
+            </p>
+
+            <p id="informationInfo" class="pr-5 pb-5 pl-5 pt-1 col-md-5 hidden">
+                I denne kasse er der 100% bæredygtig materiale til:<br>
+                4 x lys <br>
+                4 x glas <br>
+                2 x papirsjuletræer <br>
+                Naturfarvet pap <br>
+                Træpinde <br>
+                Snor <br>
+                Træklemmer<br>
+                Gavekit (inkl. papir, bånd, kort) <br>
+            </p>
+
+
+
+            <p id="leveringsInfo" class="pr-5 pb-5 pl-5 pt-1 col-md-5 hidden"> Dine varer kan sendes med PostNord, DAO, Bring eller GLS. <br><br>Se <a href="handel.html">handelsbetingelserne</a> for yderligere information </p>
         </div>
-    </div> <!-- CONTAINER SLUT -->
 
 
-    <p class="pr-5 pb-5 pl-5 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic facilis explicabo quisquam aperiam illo? Soluta perspiciatis quis, laudantium dolorum quasi dicta nobis minima, maiores libero in rerum voluptates labore optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium deserunt cum qui eum consequatur aspernatur nemo tenetur harum labore eius nam aut, maxime impedit necessitatibus molestiae sapiente ex perferendis obcaecati.</p>
-
-    =======
-    <!-- PRODUKT CONATINER START -->
-    <div class="container_fluid">
 
 
+        <!-- PRODUKT CONATINER START -->
+
+
+
+        <!--
         <div class="row row-cols-1 row-cols-sm-2 justify-content-center d-flex">
 
             <div class="col m-5"><img src="img/produktbillede.png" alt=""></div>
@@ -241,8 +277,10 @@
             </div>
 
         </div>
+-->
 
 
+        <!--
         <div class="row row-cols-1 row-cols-sm-2 justify-content-center d-flex">
 
             <div class="col m-5">
@@ -269,15 +307,16 @@
                 <img src="img/produktbillede_medmaal.png" alt="">
             </div>
         </div>
+-->
 
 
         <div class="omkring d-flex" style="justify-content: center; display: flex;">
             <img style="height: 50vh; z-index: 1;" class="tre-billeder col-9 col-md-6 p-2" src="img/vidonerer.png" alt="">
             <img style="top: 75px;" class="streg" src="svg/streg2_pink.png" alt="">
         </div>
-    </div> <!-- PRODUKT CONTAINER SLUT -->
 
 
+    </div> <!-- CONTAINER SLUT -->
     <!-- Footer -->
     <footer class="page-footer font-small mt-5 pt-4 pt-md-5 pb-3 pb-md-4 px-4 px-md-5">
         <div class="row text-center">
@@ -349,10 +388,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script src="js/script.js"></script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
-</body></html>
+</body>
+
+</html>
