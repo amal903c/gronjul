@@ -141,6 +141,7 @@ nav img {
 
     nav a {
         font-size: 1.8rem;
+        font-weight: 400;
     }
 
     #menu ul {
@@ -191,7 +192,7 @@ nav img {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 8vw;
-    color: #498174;
+    color: #375d54;
 }
 
 .workshop_img {

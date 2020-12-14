@@ -2,6 +2,15 @@
 <html lang="da">
 
 <head>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,12 +28,36 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        .myDiv {
+        body {
+            background-color: #b3a3a3;
+        }
+
+        p {
+            color: white;
+        }
+
+        h2 {
+            color: #375d54;
+        }
+
+        #menu a {
+            color: white;
+        }
+
+        .guide-link a {
+            color: white;
+        }
+
+        .streg {
+            z-index: -3;
+        }
+
+        .div_rundt {
             position: relative;
             z-index: 1;
         }
 
-        .myDiv .bg {
+        .div_rundt .bg {
             position: absolute;
             z-index: -1;
             top: 0;
@@ -38,19 +71,21 @@
             height: 100%;
         }
 
+        /*
         .guide-link:hover {
-            background-color: #263F0B;
-            transition: 0.2s;
+        background-color: #263F0B;
+        transition: 0.2s;
         }
 
         .guide-link:hover a {
-            color: white;
+        color: white;
         }
 
         .myDiv:hover .bg {
-            opacity: 100;
-            transition: 0.2s;
+        opacity: 100;
+        transition: 0.2s;
         }
+*/
 
     </style>
 </head>
@@ -131,6 +166,31 @@
         <!-- Section forside text slut-->
 
 
+
+
+        <section id="forside_workshop" class="row d-flex justify-content-center mt-5">
+            <div class="col-md-5">
+                <div class="d-flex justify-content-center">
+                    <h2>Deltag i vores jule workshops</h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="text-center">Kom og vær med til at lave bæredygtig julepynt, spise æbleskiver og julehygge hver søndag i advent på Folkehuset Absalon.</p>
+                </div>
+                <div class="div_rundt omkring" style="height: 50vh; display: flex; justify-content: center; align-items: center;">
+                    <div class="bg"></div>
+                    <div class="guide-link p-3" style="background-color: #375d54;">
+                        <a href="">Tilmeld dig her</a>
+                    </div>
+                    <!--                    <img class="streg" src="svg/streg2_pink.png">-->
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+        <!--
         <div class="row row-cols-2" style="justify-content: center; height: 45vh;">
             <div class="col-6 col-md-4">
                 <div class="d-flex justify-content-center">
@@ -148,6 +208,7 @@
                 <img class="streg" src="svg/streg2_pink.png">
             </div>
         </div>
+-->
 
 
 
@@ -218,10 +279,13 @@
 
 
 
-    <!-- Footer start -->
+    <!-- Footer -->
     <footer class="page-footer font-small mt-5 pt-4 pt-md-5 pb-3 pb-md-4 px-4 px-md-5">
-        <div class="row">
-            <div class="col-md-4 mt-md-0 mt-3">
+        <div class="row text-center">
+            <div class="col-md-3 mt-md-0 mt-3">
+                <a href="index.html"><img style="width: 70px;" src="img/FAVICON.png"></a>
+            </div>
+            <div class="col-md-3 mt-md-0 mt-3">
                 <h4>Kontakt os</h4>
                 <ul class="list-unstyled">
                     <li class="pt-2">
@@ -233,7 +297,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4 mt-md-0 mt-3">
+            <div class="col-md-3 mt-md-0 mt-3">
 
                 <h4>Følg os</h4>
 
@@ -251,7 +315,7 @@
                 </ul>
 
             </div>
-            <div class="col-md-4 mt-md-0 mt-3">
+            <div class="col-md-3 mt-md-0 mt-3">
                 <h4>Information</h4>
                 <ul class="list-unstyled">
                     <li class="pt-2">
@@ -268,14 +332,13 @@
 
         </div>
     </footer>
-    <!-- Footer slut -->
+    <!-- Footer -->
 
 
     <!-- Copyright -->
     <div id="copyright" class="footer-copyright text-center py-2">Dette site er lavet i forbindelse med en caseopgave på kea
     </div>
     <!-- Copyright -->
-
 
 
 
