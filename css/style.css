@@ -128,7 +128,7 @@ footer a:hover {
 
 
 nav img {
-    max-width: 75%;
+    width: 130px;
 }
 
 #menu a {
@@ -149,8 +149,12 @@ nav img {
 }
 
 @media only screen and (min-width: 100px) {
-    #menu_logo {
+    #menu_logo_desk {
         display: none;
+    }
+
+    #menu_logo_mobil {
+        display: block;
     }
 
     nav a {
@@ -166,8 +170,12 @@ nav img {
 }
 
 @media only screen and (min-width: 992px) {
-    #menu_logo {
+    #menu_logo_desk {
         display: block;
+    }
+
+    #menu_logo_mobil {
+        display: none;
     }
 
     nav a {
