@@ -109,10 +109,12 @@ footer a {
     font-weight: 400;
     font-size: 0.9rem;
     color: #4e4747;
+
 }
 
 footer a:hover {
     color: #D0D7CA;
+    text-decoration: none;
 }
 
 
