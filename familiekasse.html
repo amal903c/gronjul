@@ -36,10 +36,10 @@
     <style>
         #fodspor>a {
             font-family: 'Quicksand', sans-serif;
-            font-weight: 500;
+            font-weight: 400;
 
             text-decoration: none;
-            color: #263F0B;
+            color: #4e4747;
         }
 
 
@@ -85,7 +85,7 @@
             font-family: 'Quicksand', sans-serif;
             font-weight: 300;
             font-size: 1rem;
-            color: #263F0B;
+            color: #ffffff;
             padding: 15px 60px;
             transition: 0.2s;
         }
@@ -96,7 +96,7 @@
         }
 
         .valgt_info {
-            border-bottom: 2px solid #263F0B;
+            border-bottom: 2px solid #4e4747;
         }
 
         .produktbeskrivelse {
@@ -132,6 +132,23 @@
             background-color: white;
         }
 
+        .gaatilkassen {
+            color: white;
+        }
+
+        a:hover {
+            color: #4e4747;
+            text-decoration: none;
+        }
+
+        .popup_boks {
+            background-color: #5F525B;
+        }
+
+        .popup_boks:hover {
+            background-color: white;
+        }
+
     </style>
 </head>
 
@@ -156,8 +173,8 @@
                         <p> <b>Stk </b>1</p>
                     </div>
                 </div>
-                <div class=" px-4 py-2 text-center" style="color: white; background-color: #498174; cursor: pointer;">
-                    <a href="kurv.html">Gå til kassen DDK 200kr</a>
+                <div class=" px-4 py-2 text-center popup_boks" style="color: white; ; cursor: pointer;">
+                    <a class="gaatilkassen" href="kurv.html">Gå til kassen DDK 200kr</a>
 
                 </div>
 
@@ -225,14 +242,14 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active"> <img src="img/produktbillede.png" alt="Hills"> </div>
                                     <div class="carousel-item"> <img src="img/produkt_ovenfra%202.png" alt="Hills"> </div>
-                                    <div class="carousel-item"> <img src="img/produkt_ovenfra%202.png" alt="Hills"> </div>
+
                                     <div class="carousel-item"> <img src="img/juletroeer2.jpg" alt="Hills"> </div>
                                 </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
                                 <ol class="carousel-indicators list-inline">
 
                                     <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="img/produktbillede.png" class="img-fluid"> </a> </li>
                                     <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="img/produkt_ovenfra%202.png" class="img-fluid"> </a> </li>
-                                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="img/produkt_ovenfra%202.png" class="img-fluid"> </a> </li>
+
                                     <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="img/juletroeer2.jpg" class="img-fluid"> </a> </li>
                                 </ol>
                             </div>
@@ -284,7 +301,7 @@
             </p>
 
             <p id="informationInfo" class="pr-5 pb-5 pl-5 pt-1 col-md-5 hidden">
-                I denne kasse er der 100% bæredygtig materiale til:<br>
+                Denne kasse indeholder:<br>
                 4 x lys <br>
                 4 x glas <br>
                 2 x papirsjuletræer <br>
