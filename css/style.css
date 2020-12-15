@@ -297,18 +297,23 @@ nav img {
 /* inspiration */
 
 .theknap:hover a {
-    color: #18312C;
-
+    color: #5F525B;
 
 }
 
+.theknap a {
+    color: white;
+    font-weight: 300;
+}
+
 .theknap {
-    background-color: #D0D7CA;
+    background-color: #5F525B;
+    border: 2px solid #5F525B;
 }
 
 .theknap:hover {
     background-color: white;
-    border: 2px solid #D0D7CA;
+    border: 2px solid #5F525B;
 }
 
 .tre-billeder {
