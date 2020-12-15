@@ -377,6 +377,11 @@ nav img {
 
 @media only screen and (min-width: 1200px) {
     #instafeed {
-        margin: 0 300px 0 300px;
+        margin: 0 350px 0 350px;
     }
+}
+
+#instafeed img:hover {
+    opacity: 0.7;
+    transition: 0.5s;
 }
