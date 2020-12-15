@@ -43,6 +43,10 @@
             color: #263F0B;
         }
 
+        #test_video {
+            z-index: 1000;
+        }
+
     </style>
 </head>
 
@@ -85,94 +89,105 @@
         <div class="d-flex justify-content-center">
             <h1 class="col-md-5 my-5 col-10 text-center">Workshop</h1>
         </div>
+        <section id="splash" class="row d-flex justify-content-center">
+            <div class="omkring col-10 col-md-5 d-flex justify-content-center mt-3">
+                <div id="test_video">
+                    <video width="100%" autoplay muted loop>
+                        <source src="video/splash.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <img style="top: 60px;" class="streg" src="svg/streg.png" alt="">
+            </div>
 
-        <div class="omkring d-flex" style="justify-content: center; display: flex;">
-            <video width="40%" autoplay muted loop>
+            <!--
+        <div class="omkring" style="justify-content: center; display: flex;">
+            <video width="100%" autoplay muted loop>
                 <source src="video/splash.mp4" type="video/mp4">
             </video>
 
-            <!--            <img style="height: 50vh; z-index: 1;" class="tre-billeder col-10 col-md-5 p-2" src="img/workshop2.png" alt="">-->
+                        <img style="height: 50vh; z-index: 1;" class="tre-billeder col-10 col-md-5 p-2" src="img/workshop2.png" alt="">
             <img style="top: 60px;" class="streg" src="svg/streg.png" alt="">
         </div>
+-->
 
-        <div style="display: flex; justify-content: center;">
-            <p class="col-md-5 my-5 col-10 ">Hver adventssøndag afholder vi en helt speciel workshop, til ære for julen, hyggen og miljøet. Kom og lav dit helt eget bæredygtige julepynt, der kan pynte i dit hjem. Vi har sørget for alt du skal bruge, skruet op for julemusikken og sat æbleskiverne i ovnen.
-                <br><br>
-                Vi håber det lyder som noget for dig, hvis du har lyst til at bruge din søndag i julens tegn. Tag din mor, veninde eller kæreste under armen, så ses vi næste søndag til en hyggelig og kreativ dag.
-            </p>
-        </div>
-        <div class="row mt-5 row-cols-3 text-center" style="display: flex; justify-content: center;">
-            <div class="col">
-                <h2>Placering</h2>
-                <p>Folkehuset Absalon</p>
-            </div>
-            <div class="col">
-                <h2>Tid</h2>
-                <p>
-                    16.00 - 20.00
+            <div style="display: flex; justify-content: center;">
+                <p class="col-md-5 my-5 col-10 ">Hver adventssøndag afholder vi en helt speciel workshop, til ære for julen, hyggen og miljøet. Kom og lav dit helt eget bæredygtige julepynt, der kan pynte i dit hjem. Vi har sørget for alt du skal bruge, skruet op for julemusikken og sat æbleskiverne i ovnen.
+                    <br><br>
+                    Vi håber det lyder som noget for dig, hvis du har lyst til at bruge din søndag i julens tegn. Tag din mor, veninde eller kæreste under armen, så ses vi næste søndag til en hyggelig og kreativ dag.
                 </p>
             </div>
-            <div class="col">
-                <h2>Pris</h2>
-                <p>kr 100</p>
-            </div>
-        </div>
-
-
-
-        <form class="row d-flex mt-5" style="justify-content: center">
-            <div class="col-10 col-md-5">
-                <div class="d-flex justify-content-center">
-                    <h2 class="text-center">Tilmeld workshop</h2>
+            <div class="row mt-5 row-cols-3 text-center" style="display: flex; justify-content: center;">
+                <div class="col">
+                    <h2>Placering</h2>
+                    <p>Folkehuset Absalon</p>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1"></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Fornavn">
+                <div class="col">
+                    <h2>Tid</h2>
+                    <p>
+                        16.00 - 20.00
+                    </p>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1"></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Efternavn">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1"></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Indtast email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Vælg dag</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1. søndag i advent</option>
-                        <option>2. søndag i advent</option>
-                        <option>3. søndag i advent</option>
-                        <option>4. søndag i advent</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Vælg antal personer</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </select>
-                </div>
-
-            </div>
-            <div style="display: flex; justify-content: center;">
-                <div class="knap guide-link px-5 py-2 mt-4 mb-5">
-                    <a href="workshop.html">Tilmeld</a>
+                <div class="col">
+                    <h2>Pris</h2>
+                    <p>kr 100</p>
                 </div>
             </div>
-        </form>
 
 
 
-        <!--
+            <form class="row d-flex mt-5" style="justify-content: center">
+                <div class="col-10 col-md-5">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="text-center">Tilmeld workshop</h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Fornavn">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Efternavn">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Indtast email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Vælg dag</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1. søndag i advent</option>
+                            <option>2. søndag i advent</option>
+                            <option>3. søndag i advent</option>
+                            <option>4. søndag i advent</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Vælg antal personer</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <div class="knap guide-link px-5 py-2 mt-4 mb-5">
+                        <a href="workshop.html">Tilmeld</a>
+                    </div>
+                </div>
+            </form>
+
+
+
+            <!--
 <div class="row mt-5 row-cols-4 text-center" style="display: flex; justify-content: center;">
     <div class="col" style="border-style:solid;padding: 20px 5px 20px 5px;margin: 0px 10px 0px 10px;border-color:#DAC6AB; border-width: thin; ">
         <p>1. Advent</p>
