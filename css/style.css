@@ -389,3 +389,7 @@ nav img {
     opacity: 0.7;
     transition: 0.5s;
 }
+
+.row {
+    --bs-gutter-x: 0;
+}
