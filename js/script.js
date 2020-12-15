@@ -9,6 +9,7 @@ window.addEventListener("load", visStart);
 function visStart() {
     console.log("jeg er ved start")
     produktInfoSkift();
+    clickAddToKurv();
 }
 
 
@@ -72,3 +73,11 @@ function filtering() {
 var rellax = new Rellax(".rellax", {
     center: true,
 });
+
+
+
+// KØBS FLOW STARTER HER
+
+function clickAddToKurv() {
+
+}
