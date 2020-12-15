@@ -74,7 +74,22 @@ var rellax = new Rellax(".rellax", {
     center: true,
 });
 
+//Instagram feed
+const instaFeed = document.querySelector("#instafeed");
 
+gsap.from(instaFeed, {
+    opacity: 0,
+    y: 100,
+    duration: 2,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: "#instafeed",
+        start: "20% bottom",
+        end: "20% top",
+        //        markers: true,
+        scrub: true,
+    }
+});
 
 // KØBS FLOW STARTER HER
 
