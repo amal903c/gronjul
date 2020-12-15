@@ -128,7 +128,7 @@ footer a:hover {
 
 
 nav img {
-    width: 80%;
+    max-width: 75%;
 }
 
 #menu a {
