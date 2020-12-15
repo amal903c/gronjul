@@ -194,8 +194,11 @@ nav img {
 }
 
 .streg {
-    position: absolute;
+
     width: 100vw;
+
+    object-fit: cover;
+    object-position: 39% 50%;
 }
 
 .omkring video {
