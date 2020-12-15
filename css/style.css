@@ -245,13 +245,17 @@ nav img {
 
     .splash_container > div,
     .splash_container img {
-        height: 83vh;
+        height: 75vh;
+    }
+
+    .mom_img .img {
+        height: 100%;
     }
 
 }
 
 .paralax-billede-naturen {
-    background-image: url(../img/skov2.png);
+    background-image: url(../img/skov3.png);
     background-size: cover;
     height: 40vh;
     background-attachment: fixed;
@@ -265,6 +269,11 @@ nav img {
 
     background-size: cover;
 }*/
+
+#forside_workshop h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
 
 
 
@@ -351,3 +360,28 @@ nav img {
     color: white;
 }
 */
+
+@media only screen and (min-width: 768px) {
+    #instafeed {
+        margin: 0 80px 0 80px;
+    }
+}
+
+@media only screen and (min-width: 902px) {
+    #instafeed {
+        margin: 0 200px 0 200px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    #instafeed {
+        margin: 0 350px 0 350px;
+    }
+}
+
+#instafeed img:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
