@@ -70,14 +70,27 @@ function filtering() {
 
 //forside
 
-var rellax = new Rellax(".rellax", {
-    center: true,
-});
+//var rellax = new Rellax(".rellax", {
+//    center: true,
+//});
 
 
 
 // KØBS FLOW STARTER HER
 
 function clickAddToKurv() {
+    document.querySelector("#addToCard").addEventListener("click", () => {
 
+        console.log("jeg har klikket på tilføjet til kurv")
+        document.querySelector("#popupkurv").classList.remove("hidden");
+
+        document.querySelector("#lukkeknap").addEventListener("click", () => {
+
+            console.log("jeg har klikket på lukkeknap")
+            document.querySelector("#popupkurv").classList.add("hidden");
+        })
+        document.querySelector("#popupkurv").addEventListener("click", () => {
+            document.querySelector("#popupkurv").classList.add("hidden");
+        })
+    })
 }

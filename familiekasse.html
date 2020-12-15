@@ -124,6 +124,8 @@
             left: 0;
             right: 0;
             bottom: 0;
+            transform: translate(-100);
+            transition: 0.5s;
         }
 
         .popupkurv {
@@ -135,11 +137,11 @@
 <body>
 
     <!-- POP UP start -->
-    <div class="popup">
+    <div id="popupkurv" class="popup hidden">
 
         <div class="popupkurvcontainer row mt-5">
-            <div class="popupkurv col-3 offset-8 mt-5">
-                <p class="m-0 text-end p-1">X</p>
+            <div class="popupkurv col-3 offset-8 mt-5 p-4">
+                <p style="cursor: pointer;" id="lukkeknap" class="m-0 text-end">X</p>
                 <h3 style="border-bottom: 1px solid rgba(221, 218, 218, 0.54)">Tilføjet i indkøbskurven</h3>
 
 
@@ -149,10 +151,19 @@
                     </div>
                     <div>
                         <h3>Familiekassen</h3>
-                        <p>Pris: </p>
+                        <p><b>Pris </b>200kr </p>
+                        <p> <b>Stk </b>1</p>
                     </div>
                 </div>
+                <div class=" px-4 py-2 text-center" style="color: white; background-color: #498174; cursor: pointer;">
+                    <a href="kurv.html">Gå til kassen DDK 200kr</a>
 
+                </div>
+
+                <div class="row row-cols-2 d-flex mt-2" style="justify-content: center">
+                    <img style="width: 5vw; object-fit: scale-down;" src="svg/mastercard.png" alt="">
+                    <img style="width: 5vw; object-fit: scale-down;" src="svg/visa.png" alt="">
+                </div>
 
             </div>
         </div>
@@ -245,8 +256,8 @@
 
                 <div class="d-flex mt-4" style="justify-content: center;">
 
-                    <div class="knap guide-link px-5 py-2">
-                        <a id="addToCard" href="">Tilføj til kurv</a>
+                    <div style="cursor: pointer;" id="addToCard" class="knap guide-link px-5 py-2">
+                        Tilføj til kurv
                     </div>
                 </div>
             </div>
