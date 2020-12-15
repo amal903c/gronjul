@@ -9,6 +9,7 @@ window.addEventListener("load", visStart);
 function visStart() {
     console.log("jeg er ved start")
     produktInfoSkift();
+    clickAddToKurv();
 }
 
 
@@ -69,6 +70,42 @@ function filtering() {
 
 //forside
 
-var rellax = new Rellax(".rellax", {
-    center: true,
+//var rellax = new Rellax(".rellax", {
+//    center: true,
+//});
+
+//Instagram feed
+const instaFeed = document.querySelector("#instafeed");
+
+gsap.from(instaFeed, {
+    opacity: 0,
+    y: 100,
+    duration: 2,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: "#instafeed",
+        start: "20% bottom",
+        end: "20% top",
+        //        markers: true,
+        scrub: true,
+    }
 });
+
+// KØBS FLOW STARTER HER
+
+function clickAddToKurv() {
+    document.querySelector("#addToCard").addEventListener("click", () => {
+
+        console.log("jeg har klikket på tilføjet til kurv")
+        document.querySelector("#popupkurv").classList.remove("hidden");
+
+        document.querySelector("#lukkeknap").addEventListener("click", () => {
+
+            console.log("jeg har klikket på lukkeknap")
+            document.querySelector("#popupkurv").classList.add("hidden");
+        })
+        document.querySelector("#popupkurv").addEventListener("click", () => {
+            document.querySelector("#popupkurv").classList.add("hidden");
+        })
+    })
+}
