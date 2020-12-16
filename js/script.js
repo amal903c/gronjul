@@ -76,6 +76,10 @@ function filtering() {
 
 //Instagram feed
 const instaFeed = document.querySelector("#instafeed");
+const tekstFade = document.querySelector("#tekst_fade");
+const workshop = document.querySelector("#forside_workshop");
+const middag = document.querySelector("#middag_fade");
+const gaver = document.querySelector("#gaver_fade");
 
 gsap.from(instaFeed, {
     opacity: 0,
@@ -90,6 +94,63 @@ gsap.from(instaFeed, {
         scrub: true,
     }
 });
+
+gsap.from(tekstFade, {
+    opacity: 0,
+    y: 100,
+    duration: 2,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: "#tekst_fade",
+        start: "20% bottom",
+        end: "20% top",
+        //        markers: true,
+        scrub: true,
+    }
+});
+
+gsap.from(workshop, {
+    opacity: 0,
+    y: 100,
+    duration: 2,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: "#forside_workshop",
+        start: "20% bottom",
+        end: "20% top",
+        //        markers: true,
+        scrub: true,
+    }
+});
+
+gsap.from(middag, {
+    opacity: 0,
+    y: 100,
+    duration: 2,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: "#middag_fade",
+        start: "20% bottom",
+        end: "20% top",
+        //        markers: true,
+        scrub: true,
+    }
+});
+
+gsap.from(gaver, {
+    opacity: 0,
+    y: 100,
+    duration: 2,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: "#gaver_fade",
+        start: "20% bottom",
+        end: "20% top",
+        //        markers: true,
+        scrub: true,
+    }
+});
+
 
 // KØBS FLOW STARTER HER
 
