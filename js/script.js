@@ -89,7 +89,7 @@ gsap.from(instaFeed, {
     scrollTrigger: {
         trigger: "#instafeed",
         start: "20% bottom",
-        end: "20% top",
+        end: "10% top",
         //        markers: true,
         scrub: true,
     }
@@ -103,7 +103,7 @@ gsap.from(tekstFade, {
     scrollTrigger: {
         trigger: "#tekst_fade",
         start: "20% bottom",
-        end: "20% top",
+        end: "10% top",
         //        markers: true,
         scrub: true,
     }
@@ -117,7 +117,7 @@ gsap.from(workshop, {
     scrollTrigger: {
         trigger: "#forside_workshop",
         start: "20% bottom",
-        end: "20% top",
+        end: "10% top",
         //        markers: true,
         scrub: true,
     }
@@ -131,7 +131,7 @@ gsap.from(middag, {
     scrollTrigger: {
         trigger: "#middag_fade",
         start: "20% bottom",
-        end: "20% top",
+        end: "10% top",
         //        markers: true,
         scrub: true,
     }
@@ -145,7 +145,7 @@ gsap.from(gaver, {
     scrollTrigger: {
         trigger: "#gaver_fade",
         start: "20% bottom",
-        end: "20% top",
+        end: "10% top",
         //        markers: true,
         scrub: true,
     }
