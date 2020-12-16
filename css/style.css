@@ -429,3 +429,22 @@ nav img {
     --bs-gutter-x: 0;
 }
 */
+
+
+/*                mailchimp           */
+#mce-EMAIL,
+#mce-FNAME,
+#mce-LNAME {
+    border-style: solid;
+    border-color: #4e4747;
+    border-width: thin;
+}
+
+#mc_embed_signup_scroll .knap {
+    border-style: solid;
+    border-color: #5F525B;
+}
+
+#mc_embed_signup_scroll label {
+    border-color: #4e4747;
+}
