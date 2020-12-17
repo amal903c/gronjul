@@ -1,4 +1,3 @@
-<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"crossorigin="anonymous" >
 /*Generelle*/
 
 body {
@@ -67,12 +66,6 @@ a {
 
     text-decoration: none;
     color: #263F0B;
-}
-
-@media only screen and (min-width: 768px) {
-        {
-        font-size: 1.4rem;
-    }
 }
 
 
@@ -233,10 +226,6 @@ nav img {
 
 .f_kasse {
     width: 50%;
-}
-
-.h2_mødre {
-    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
